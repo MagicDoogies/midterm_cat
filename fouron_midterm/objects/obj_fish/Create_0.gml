@@ -5,7 +5,7 @@ enum fish_type{
 /// good=0 glow=1, eel=2
 type= choose (fish_type.good, fish_type.glow, fish_type.eel);
 sprites=[spr_goodfish, spr_glowfish, spr_eel]
-swim_speed=[-3, -4, -8];
+swim_speed=[-5, -3, -8];
 fish_speed= swim_speed[type];
 	
 

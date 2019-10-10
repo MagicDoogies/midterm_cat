@@ -9,11 +9,9 @@ if (y <= 100) {
 if (fish_fall == true) {
 	y-= fish_speed;
 		if (y>= 750) {
-		dead= true;
-		
-		
-			
+		dead= true;	
 		}
 } else {
 	y += fish_speed;
 }
+
