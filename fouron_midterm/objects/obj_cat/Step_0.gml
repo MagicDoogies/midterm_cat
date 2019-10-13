@@ -40,4 +40,3 @@ if (keyboard_check_pressed(vk_space)) {
 	}
 }
 		
-/// this marks the end of basic controls for the cat.		

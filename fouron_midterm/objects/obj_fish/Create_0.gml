@@ -16,5 +16,5 @@ sprite_index= sprites[type];
 x= choose(750, 980, 1210, 1440, 1670, 1900);
 y= 750;
 fish_fall= false;
-dead= false;
+dead= false;//boolean for if the fish hits the water.
 
