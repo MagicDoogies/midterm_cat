@@ -15,13 +15,13 @@ else {
 		
 if (keyboard_check_pressed(vk_left)) {
 	hspeed -= cat_speed;
-	sprite_index= spr_cat_run_left
+	sprite_index= spr_cat_run_left;
 		
 }
 else {
 	if (keyboard_check_released(vk_left)) {
 		hspeed= 0;
-		sprite_index= spr_cat_idle_left
+		sprite_index= spr_cat_idle_left;
 	}
 			
 }

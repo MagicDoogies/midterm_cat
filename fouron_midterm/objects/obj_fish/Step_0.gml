@@ -14,9 +14,40 @@ if (fish_fall == true) {
 } else {
 	y += fish_speed;
 }
-///fish dies if the player not only touches but attacks the fish.
+///If cat attacks the fish in general
 if (place_meeting(x,y, obj_cat)){
 	if (keyboard_check_pressed(vk_space)){
 		dead=true;
+	}
+}
+
+/// various fish effects on collision
+if (place_meeting(x,y, obj_cat)){
+	if (sprite_index= spr_goodfish){
+		if (keyboard_check_pressed(vk_space)){
+			score += 10;
+			points.triggered= true;
+			dead=true;
+		}
+	}
+}
+
+if (place_meeting(x,y, obj_cat)){
+	if (sprite_index= spr_glowfish){
+		if (keyboard_check_pressed(vk_space)){
+			score += 5;
+			triggered= true;
+			dead=true;
+		}
+	}
+}
+
+if (place_meeting(x,y, obj_cat)){
+	if (sprite_index= spr_eel){
+		if (keyboard_check_pressed(vk_space)){
+			score -= 10;
+			triggered= true;
+			dead=true;
+		}
 	}
 }
